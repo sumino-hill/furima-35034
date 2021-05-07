@@ -51,7 +51,8 @@ Things you may want to cover:
 | image      | string    | null: false      |
 | explain    | text      | null: false      |
 | category   | string    | null: false      |
-| status     | string    | null: false      |
+| state      | string    | null: false      |
+| cost       | string    | null: false      |
 | location   | string    | null: false      |
 | days       | string    | null: false      |
 | price      | integer   | null: false      |
@@ -62,7 +63,7 @@ Things you may want to cover:
 - belongs_to :user
 - has_one :purchase
 
-## purchaseテーブル
+## purchasesテーブル
 
 | Column     | Type      | Options           |
 | ---------- | --------- | ----------------- |

@@ -1,0 +1,833 @@
+    1  1620284710  0:00  chsh -s /bin/zsh
+    2  1620284710  0:00  echo $SHELL
+    3  1620284710  0:00  xcode-select --install
+    4  1620284710  0:00  cd
+    5  1620284710  0:00  pwd
+    6  1620284710  0:00  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    7  1620284710  0:00  brew -v
+    8  1620284710  0:00  brew -v
+    9  1620284710  0:00  brew update
+   10  1620284710  0:00  sudo chown -R `whoami`:admin /usr/local/bin
+   11  1620284710  0:00  brew install rbenv ruby-build
+   12  1620284710  0:00  echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+   13  1620284710  0:00  source ~/.zshrc
+   14  1620284710  0:00  brew install readline
+   15  1620284710  0:00  brew link readline --force
+   16  1620284710  0:00  RUBY_CONFIGURE_OPTS="--with-readline-dir=$(brew --prefix readline)"
+   17  1620284710  0:00  rbenv install 2.6.5
+   18  1620284710  0:00  rbenv global 2.6.5
+   19  1620284710  0:00  rbenv rehash
+   20  1620284710  0:00  ruby -v
+   21  1620284710  0:00  brew install mysql@5.6
+   22  1620284710  0:00  mkdir ~/Library/LaunchAgents
+   23  1620284710  0:00  ln -sfv /usr/local/opt/mysql\@5.6/*.plist ~/Library/LaunchAgents
+   24  1620284710  0:00  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql\@5.6.plist
+   25  1620284710  0:00  echo 'export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"' >> ~/.zshrc
+   26  1620284710  0:00  source ~/.zshrc
+   27  1620284710  0:00  which mysql
+   28  1620284710  0:00  mysql.server status
+   29  1620284710  0:00  gem install bundler --version='2.1.4'
+   30  1620284710  0:00  gem install rails --version='6.0.0'
+   31  1620284710  0:00  rbenv rehash
+   32  1620284710  0:00  rails -v
+   33  1620284710  0:00  brew install node@14
+   34  1620284710  0:00  echo 'export PATH="/usr/local/opt/node@14/bin:$PATH"' >> ~/.zshrc
+   35  1620284710  0:00  source ~/.zshrc
+   36  1620284710  0:00  node -v
+   37  1620284710  0:00  brew install yarn
+   38  1620284710  0:00  yarn -v
+   39  1620284710  0:00  pwd
+   40  1620284710  0:00  ls
+   41  1620284710  0:00  cd
+   42  1620284710  0:00  cd /
+   43  1620284710  0:00  ls
+   44  1620284710  0:00  cd /Users
+   45  1620284710  0:00  cd suminotaisei/Desktop
+   46  1620284710  0:00  whoami
+   47  1620284710  0:00  whoareyou
+   48  1620284710  0:00  whoareu
+   49  1620284710  0:00  hello
+   50  1620284710  0:00  ls
+   51  1620284710  0:00  cd ruby
+   52  1620284710  0:00  ls
+   53  1620284710  0:00  ruby helloworld.rb
+   54  1620284710  0:00  helloworld.rb
+   55  1620284710  0:00  helloworld.rb]
+   56  1620284710  0:00  ruby error.rb
+   57  1620284710  0:00  ruby error.rb
+   58  1620284710  0:00  ruby error.rb
+   59  1620284710  0:00  irb
+   60  1620284710  0:00  ls
+   61  1620284710  0:00  ~/ruby
+   62  1620284710  0:00  rib
+   63  1620284710  0:00  irb
+   64  1620284710  0:00  ibr
+   65  1620284710  0:00  irb
+   66  1620284710  0:00  irb
+   67  1620284710  0:00  ls
+   68  1620284710  0:00  irb
+   69  1620284710  0:00  irb
+   70  1620284710  0:00  irb
+   71  1620284710  0:00  irb
+   72  1620284710  0:00  iruby
+   73  1620284710  0:00  interactive Ruby
+   74  1620284710  0:00  Interactive Ruby
+   75  1620284710  0:00  interactive ruby
+   76  1620284710  0:00  interactiveruby
+   77  1620284710  0:00  pwd
+   78  1620284710  0:00  ls
+   79  1620284710  0:00  cd ruby
+   80  1620284710  0:00  ruby input.rb
+   81  1620284710  0:00  ruby input rb
+   82  1620284710  0:00  ruby input.rb
+   83  1620284710  0:00  バエル
+   84  1620284710  0:00  ruby input.rb
+   85  1620284710  0:00  ruby input.rb
+   86  1620284710  0:00  ruby input.rb
+   87  1620284710  0:00  ruby secounds.rb
+   88  1620284710  0:00  ruby seconds.rb
+   89  1620284710  0:00  ruby seconds.rb
+   90  1620284710  0:00  ruby seconds.rb
+   91  1620284710  0:00  ruby seconds.rb
+   92  1620284710  0:00  ruby seconds.rb
+   93  1620284710  0:00  irb
+   94  1620284710  0:00  ruby
+   95  1620284710  0:00  ruby
+   96  1620284710  0:00  irb
+   97  1620284710  0:00  ruby array.rb
+   98  1620284710  0:00  cd ruby
+   99  1620284710  0:00  ruby array.rb
+  100  1620284710  0:00  ruby array.rb
+  101  1620284710  0:00  ruby array.rb
+  102  1620284710  0:00  ruby
+  103  1620284710  0:00  cd ruby
+  104  1620284710  0:00  ruby array.rb
+  105  1620284710  0:00  ruby array.rb
+  106  1620284710  0:00  ruby array.rb
+  107  1620284710  0:00  ruby array.rb
+  108  1620284710  0:00  cd ruby
+  109  1620284710  0:00  ruby roller_coaster.rb
+  110  1620284710  0:00  ruby array.rb
+  111  1620284710  0:00  ruby array.rb
+  112  1620284710  0:00  ruby hash.rb
+  113  1620284710  0:00  ls
+  114  1620284710  0:00  ruby hash.rb
+  115  1620284710  0:00  ruby hash.rb
+  116  1620284710  0:00  cd ruby
+  117  1620284710  0:00  if.rb
+  118  1620284710  0:00  ruby if.rb
+  119  1620284710  0:00   ruby if.rb
+  120  1620284710  0:00  cd ruby
+  121  1620284710  0:00  irb
+  122  1620284710  0:00  irb
+  123  1620284710  0:00  cd ruby
+  124  1620284710  0:00  ruby if.rb
+  125  1620284710  0:00  ruby if.rb
+  126  1620284710  0:00  ruby if.rb
+  127  1620284710  0:00  ruby if.rb
+  128  1620284710  0:00  ruby if.rb
+  129  1620284710  0:00  ruby loop.rb
+  130  1620284710  0:00  ruby
+  131  1620284710  0:00  cd ruby
+  132  1620284710  0:00  ruby loop.rb
+  133  1620284710  0:00  cd ruby
+  134  1620284710  0:00  ruby loop rb
+  135  1620284710  0:00  ruby loop.rb
+  136  1620284710  0:00  ruby method.rb
+  137  1620284710  0:00  ruby method.rb
+  138  1620284710  0:00  ruby method.rb
+  139  1620284710  0:00  ruby roller_caster.rb
+  140  1620284710  0:00  ruby roller_coaster
+  141  1620284710  0:00  ruby roller_coaster.rb
+  142  1620284710  0:00  ruby class.rb
+  143  1620284710  0:00  irb
+  144  1620284710  0:00  cd ruby
+  145  1620284710  0:00  ruby class.rb
+  146  1620284710  0:00  gem instala
+  147  1620284710  0:00  gem install sinatra
+  148  1620284710  0:00  cd sinatra
+  149  1620284710  0:00  ruby myApp.rb
+  150  1620284710  0:00  cd
+  151  1620284710  0:00  cd ~/projects
+  152  1620284710  0:00  bundle config --global build.mysql2 --with-opt-dir="$(brew --prefix openssl)"\n
+  153  1620284710  0:00  rails _6.0.0_ new first_app -d mysql
+  154  1620284710  0:00  cd first_app
+  155  1620284710  0:00  pwd
+  156  1620284710  0:00  rails db:create
+  157  1620284710  0:00  rails s
+  158  1620284710  0:00  rails s
+  159  1620284710  0:00  cd
+  160  1620284710  0:00  cd firdt_app
+  161  1620284710  0:00  cd first_app
+  162  1620284710  0:00  ls
+  163  1620284710  0:00  cd projects
+  164  1620284710  0:00  cd first_app
+  165  1620284710  0:00  cd projects
+  166  1620284710  0:00  projects
+  167  1620284710  0:00  cd
+  168  1620284710  0:00  cd projects
+  169  1620284710  0:00  ls
+  170  1620284710  0:00  rails routes
+  171  1620284710  0:00  rails s
+  172  1620284710  0:00  pwe
+  173  1620284710  0:00  pwe
+  174  1620284710  0:00  pew
+  175  1620284710  0:00  ped
+  176  1620284710  0:00  pwd
+  177  1620284710  0:00  ls
+  178  1620284710  0:00  cd first_app
+  179  1620284710  0:00  rails g controller posts
+  180  1620284710  0:00  rails s
+  181  1620284710  0:00  rails
+  182  1620284710  0:00  ls
+  183  1620284710  0:00  cd projects
+  184  1620284710  0:00  ls
+  185  1620284710  0:00  cd first_app
+  186  1620284710  0:00  ls
+  187  1620284710  0:00  rails s
+  188  1620284710  0:00  rails g model post
+  189  1620284710  0:00  rails db:migrate
+  190  1620284710  0:00  rails db:rollback
+  191  1620284710  0:00  rails db:migrate:status
+  192  1620284710  0:00  rails db:migrate
+  193  1620284710  0:00  rails c
+  194  1620284710  0:00  rails s
+  195  1620284710  0:00  rails s
+  196  1620284710  0:00  cd projects/first_app
+  197  1620284710  0:00  rails c
+  198  1620284710  0:00  rails routs
+  199  1620284710  0:00  rails routes
+  200  1620284710  0:00  rails routes
+  201  1620284710  0:00  railsroutes
+  202  1620284710  0:00  rails routes
+  203  1620284710  0:00  cd
+  204  1620284710  0:00  rails _6.0.0_ new drill_app -d mysql
+  205  1620284710  0:00  rails db:create
+  206  1620284710  0:00  rails d
+  207  1620284710  0:00  cd projects/dlill_app
+  208  1620284710  0:00  ls
+  209  1620284710  0:00  cd projects
+  210  1620284710  0:00  cd drill_app
+  211  1620284710  0:00  rails db:create
+  212  1620284710  0:00  rails g controller posts
+  213  1620284710  0:00  rails g model post
+  214  1620284710  0:00  rails db:migrate
+  215  1620284710  0:00  rails s
+  216  1620284710  0:00  cd projects/drill_app
+  217  1620284710  0:00  rails s
+  218  1620284710  0:00  rails s
+  219  1620284710  0:00  cd projects
+  220  1620284710  0:00  rails _6.0.0_ new drill_app -d mysql
+  221  1620284710  0:00  cd drill_app
+  222  1620284710  0:00  rails db:create
+  223  1620284710  0:00  rails g controller posts
+  224  1620284710  0:00  rails g model post
+  225  1620284710  0:00  rails db:migrate
+  226  1620284710  0:00  rails db:migrate
+  227  1620284710  0:00  rails s
+  228  1620284710  0:00  rails s
+  229  1620284710  0:00  CD projects
+  230  1620284710  0:00  cd projects
+  231  1620284710  0:00  rails _6.0.0_ newd drill_app -d mysql
+  232  1620284710  0:00  cd drill_app
+  233  1620284710  0:00  rails db:create
+  234  1620284710  0:00  rails s
+  235  1620284710  0:00  cd projects
+  236  1620284710  0:00  rails _6.0.0_ new drill_app -d mysql
+  237  1620284710  0:00  cd drill_app
+  238  1620284710  0:00  rails db:create
+  239  1620284710  0:00  rails g controller posts
+  240  1620284710  0:00  rails g model post
+  241  1620284710  0:00  rails db:migrate
+  242  1620284710  0:00  rails db:migrate
+  243  1620284710  0:00  rails db:rollback
+  244  1620284710  0:00  rails db:migrate
+  245  1620284710  0:00  rails db:migrate
+  246  1620284710  0:00  rails db:create
+  247  1620284710  0:00  rails db:migrate
+  248  1620284710  0:00  rails db:rollback
+  249  1620284710  0:00  rails db:migrate
+  250  1620284710  0:00  rails g model post
+  251  1620284710  0:00  rails s
+  252  1620284710  0:00  rails _6.0.0_ new drill_app3 -d mysql
+  253  1620284710  0:00  cd projects/drill_app3
+  254  1620284710  0:00  rails db:create
+  255  1620284710  0:00  rails g controller posts
+  256  1620284710  0:00  rails g model post
+  257  1620284710  0:00  rails db:migrate
+  258  1620284710  0:00  irb
+  259  1620284710  0:00  cd test
+  260  1620284710  0:00  test test.rb
+  261  1620284710  0:00  test.rb
+  262  1620284710  0:00  test.rb
+  263  1620284710  0:00  ruby test.rb
+  264  1620284710  0:00  ruby test.rb
+  265  1620284710  0:00  ruby test.rb
+  266  1620284710  0:00  ruby test.rb
+  267  1620284710  0:00  ruby test.rb
+  268  1620284710  0:00  ruby test.rb
+  269  1620284710  0:00  ruby test.rb
+  270  1620284710  0:00  ruby test.rb
+  271  1620284710  0:00  ruby test.rb
+  272  1620284710  0:00  ruby test.rb
+  273  1620284710  0:00  ruby test.rb
+  274  1620284710  0:00  ruby test.rb
+  275  1620284710  0:00  rails s
+  276  1620284710  0:00  rails s
+  277  1620284710  0:00  rails s
+  278  1620284710  0:00  rails s
+  279  1620284710  0:00  rails s
+  280  1620284710  0:00  rails s
+  281  1620284710  0:00  rails s
+  282  1620284710  0:00  cd ~/projects
+  283  1620284710  0:00  rails _6.0.0_ new pictweet -d mysql\n
+  284  1620284710  0:00  cd pictweet\n
+  285  1620284710  0:00  pwd
+  286  1620284710  0:00  rails db:create
+  287  1620284710  0:00  bundle install
+  288  1620284710  0:00  rails g model tweet
+  289  1620284710  0:00  rails db:migrate
+  290  1620284710  0:00  rails c
+  291  1620284710  0:00  rails g controller tweets
+  292  1620284710  0:00  rails s
+  293  1620284710  0:00  rails s
+  294  1620284710  0:00  rails s
+  295  1620284710  0:00  rails s
+  296  1620284710  0:00  rails s
+  297  1620284710  0:00  rails s
+  298  1620284710  0:00  rails routes
+  299  1620284710  0:00  rails routes
+  300  1620284710  0:00  bundle install
+  301  1620284710  0:00  rails g devise:install
+  302  1620284710  0:00  rails g devise user
+  303  1620284710  0:00  rails db:migrate
+  304  1620284710  0:00  rails g devise:views
+  305  1620284710  0:00  rails g migration AddNicknameToUsers nickname:string
+  306  1620284710  0:00  rails db:migrate
+  307  1620284710  0:00  rails g migration AddUserIdToTweets user_id:integer\n
+  308  1620284710  0:00  rails db:migrate
+  309  1620284710  0:00  rails s
+  310  1620284710  0:00  cd
+  311  1620284710  0:00  cd projects
+  312  1620284710  0:00  cd pictweet
+  313  1620284710  0:00  rails s
+  314  1620284710  0:00  rails s
+  315  1620284710  0:00  rails s
+  316  1620284710  0:00  rails s
+  317  1620284710  0:00  rails s
+  318  1620284710  0:00  rails s
+  319  1620284710  0:00  rails s
+  320  1620284710  0:00  rails s
+  321  1620284710  0:00  rails s
+  322  1620284710  0:00  rails s
+  323  1620284710  0:00  rails s
+  324  1620284710  0:00  rails s
+  325  1620284710  0:00  rails c
+  326  1620284710  0:00  rails s
+  327  1620284710  0:00  cd
+  328  1620284710  0:00  cd projects/first_app
+  329  1620284710  0:00  cd
+  330  1620284710  0:00  cdprojects/pictweet
+  331  1620284710  0:00  cd projects/pictweet
+  332  1620284710  0:00  rails g controller users
+  333  1620284710  0:00  rails db:migration
+  334  1620284710  0:00  rails db:migration
+  335  1620284710  0:00  rails g migration RemoveNameFromTweets name:string
+  336  1620284710  0:00  rails db:migrate
+  337  1620284710  0:00  raills db:migrate
+  338  1620284710  0:00  rails db:migrate
+  339  1620284710  0:00  rails db:migration
+  340  1620284710  0:00  rails db:migrate
+  341  1620284710  0:00  rails g model comment
+  342  1620284710  0:00  rails db:migrate
+  343  1620284710  0:00  cd
+  344  1620284710  0:00  cd ~/projects
+  345  1620284710  0:00  git clone https://github.com/we-b/error_pictweet_rails6.git
+  346  1620284710  0:00  cd error_pictweet_rails6 
+  347  1620284710  0:00  bundle install
+  348  1620284710  0:00  yarn install
+  349  1620284710  0:00  rails db:create
+  350  1620284710  0:00  rails db:migrate
+  351  1620284710  0:00  cd
+  352  1620284710  0:00  cd projects/pictweet
+  353  1620284710  0:00  rails routes
+  354  1620284710  0:00  rails g controller comments
+  355  1620284710  0:00  rails g controller comments
+  356  1620284710  0:00  rails g controller comments
+  357  1620284710  0:00  ral
+  358  1620284710  0:00  rails db:mif
+  359  1620284710  0:00  rails db:migration
+  360  1620284710  0:00  rails db:rollback
+  361  1620284710  0:00  rails db:migrate
+  362  1620284710  0:00  rails db:migrate
+  363  1620284710  0:00  rails db:migrate
+  364  1620284710  0:00  rails db:migrate
+  365  1620284710  0:00  rails db:rollback
+  366  1620284710  0:00  rails db:migrate
+  367  1620284710  0:00  cd
+  368  1620284710  0:00  cd /Users/suminotaisei/projects/error_pictweet_rails6 
+  369  1620284710  0:00  rails db:migratecd
+  370  1620284710  0:00  cd projects/pictweet
+  371  1620284710  0:00  cd projects/pictweets
+  372  1620284710  0:00  cd
+  373  1620284710  0:00  cd projects/pictweet
+  374  1620284710  0:00  bundle install
+  375  1620284710  0:00  rails g rspec:install
+  376  1620284710  0:00  rails g rspec:model user
+  377  1620284710  0:00  bundle exec rspec spec/models/user_spec.rb \n
+  378  1620284710  0:00  bundle exec rspec spec/models/user_spec.rb 
+  379  1620284710  0:00  bundle exec rspec spec/models/user_spec.rb 
+  380  1620284710  0:00  user.errors
+  381  1620284710  0:00  bundle exec rspec spec/models/user_spec.rb 
+  382  1620284710  0:00  bundle exec rspec spec/models/user_spec.rb 
+  383  1620284710  0:00  bundle install
+  384  1620284710  0:00  bundle exec rspec spec/models/user_spec.rb 
+  385  1620284710  0:00  bundle exec rspec spec/models/user_spec.rb 
+  386  1620284710  0:00  bundle install
+  387  1620284710  0:00  bundle exec rspec spec/models/user_spec.rb 
+  388  1620284710  0:00  bundle exec rspec spec/models/user_spec.rb \n
+  389  1620284710  0:00  rails g rspec:model tweet
+  390  1620284710  0:00  rails g rspec:request tweets
+  391  1620284710  0:00  bundle exec rspec spec/requests/tweets_spec.rb
+  392  1620284710  0:00   bundle exec rspec spec/requests/tweets_spec.rb
+  393  1620284710  0:00  bundle exec rspec spec/requests/tweets_spec.rb
+  394  1620284710  0:00  bundle exec rspec spec/requests/tweets_spec.rb
+  395  1620284710  0:00  bundle exec rspec spec/requests/tweets_spec.rb
+  396  1620284710  0:00  bundle exec rspec spec/requests/tweets_spec.rb
+  397  1620284710  0:00  rails g rspec:system users
+  398  1620284710  0:00  bundle exec rspec spec/system/users_spec.rb
+  399  1620284710  0:00  bundle exec rspec spec/system/users_spec.rb
+  400  1620284710  0:00  bundle exec rspec spec/system/users_spec.rb
+  401  1620284710  0:00  bundle exec rspec spec/system/users_spec.rb
+  402  1620284710  0:00  rails g rspec:system tweets
+  403  1620284710  0:00  bundle exec rspec spec/system/tweets_spec.rb\n
+  404  1620284710  0:00   bundle exec rspec spec/system/tweets_spec.rb
+  405  1620284710  0:00  bundle exec rspec spec/system/tweets_spec.rb
+  406  1620284710  0:00  bundle exec rspec spec/system/tweets_spec.rb
+  407  1620284710  0:00  rails s
+  408  1620284710  0:00  rails s
+  409  1620284710  0:00  rails g controller messages index
+  410  1620284710  0:00   git config --global core.excludesfile ~/.gitignore_global
+  411  1620284710  0:00  rails g model room
+  412  1620284710  0:00  rails db:migrate
+  413  1620284710  0:00  git status
+  414  1620284710  0:00  git add all
+  415  1620284710  0:00  git add chat-app
+  416  1620284710  0:00  git status
+  417  1620284710  0:00  git add db
+  418  1620284710  0:00  git status
+  419  1620284710  0:00  git add app
+  420  1620284710  0:00  git add chat-app 
+  421  1620284710  0:00  git status
+  422  1620284710  0:00  rails g controller rooms
+  423  1620284710  0:00  rails g model room_user
+  424  1620284710  0:00  rails g model room_user
+  425  1620284710  0:00  bundle install
+  426  1620284710  0:00  rails g devise:install
+  427  1620284710  0:00  rails g devise user
+  428  1620284710  0:00  rails g devise user
+  429  1620284710  0:00  rails s
+  430  1620284710  0:00  rails s
+  431  1620284710  0:00  rails s
+  432  1620284710  0:00  rails s
+  433  1620284710  0:00  rails s
+  434  1620284710  0:00  rails g devise user
+  435  1620284710  0:00  rails g devise:instal
+  436  1620284710  0:00  bundle install
+  437  1620284710  0:00  rails g devise:install
+  438  1620284710  0:00  rails g devise user\n
+  439  1620284710  0:00  rails db:migrate
+  440  1620284710  0:00  rails db:rollback
+  441  1620284710  0:00  rails g devise user
+  442  1620284710  0:00   cd ~/projects
+  443  1620284710  0:00  rails _6.0.0_ new chat-app2 -d mysql  
+  444  1620284710  0:00  cd chat-app2
+  445  1620284710  0:00  rails db:create
+  446  1620284710  0:00  rails g controller messages index
+  447  1620284710  0:00  bundle install
+  448  1620284710  0:00  rails g devise:install
+  449  1620284710  0:00  rails g devise user
+  450  1620284710  0:00  rails db:migrate
+  451  1620284710  0:00  rails g controller users
+  452  1620284710  0:00  git status
+  453  1620284710  0:00  git push origin master
+  454  1620284710  0:00  git push master
+  455  1620284710  0:00  rails s
+  456  1620284710  0:00  rails s
+  457  1620284710  0:00  rails s
+  458  1620284710  0:00  rails s
+  459  1620284710  0:00  rails c
+  460  1620284710  0:00  spring stop
+  461  1620284710  0:00  rails c
+  462  1620284710  0:00  rails s
+  463  1620284710  0:00  rails s
+  464  1620284710  0:00  rsil s
+  465  1620284710  0:00  rails s
+  466  1620284710  0:00  rails s
+  467  1620284710  0:00  cd ~/projects\n
+  468  1620284710  0:00  rails _6.0.0_ new chat-app4 -d mysql 
+  469  1620284710  0:00  cd chat-app
+  470  1620284710  0:00  cd chat-app4
+  471  1620284710  0:00  rails db:create
+  472  1620284710  0:00  rails g controller messages index
+  473  1620284710  0:00  rails g controller messages index
+  474  1620284710  0:00  bundle install
+  475  1620284710  0:00  rails g devise:install
+  476  1620284710  0:00  rails g devise user
+  477  1620284710  0:00  rails db:migrate
+  478  1620284710  0:00  rails g controller users
+  479  1620284710  0:00  rails g model room
+  480  1620284710  0:00  rails db:migrate
+  481  1620284710  0:00  rails g controller rooms
+  482  1620284710  0:00  rails g controller rooms
+  483  1620284710  0:00  rails g model room_user
+  484  1620284710  0:00  rails db:migrate
+  485  1620284710  0:00  rails c
+  486  1620284710  0:00  bundle install
+  487  1620284710  0:00  rails routes
+  488  1620284710  0:00  rails g model message
+  489  1620284710  0:00  rails db:migrate
+  490  1620284710  0:00  brew install imagemagick
+  491  1620284710  0:00  bundle install
+  492  1620284710  0:00  rails active_storage:install
+  493  1620284710  0:00  rails db:migrate
+  494  1620284710  0:00  rails active_storage:install
+  495  1620284710  0:00  rails db:migrate
+  496  1620284710  0:00  bundle install
+  497  1620284710  0:00  rails g rspec:install
+  498  1620284710  0:00  rails g rspec:model user
+  499  1620284710  0:00  rails g rspec:model room
+  500  1620284710  0:00  rails g rspec:model message
+  501  1620284710  0:00  bundle exec rspec spec/models/user_spec.rb
+  502  1620284710  0:00  bundle exec rspec spec/models/user_spec.rb
+  503  1620284710  0:00  bundle exec rspec spec/models/user_spec.rb
+  504  1620284710  0:00  bundle exec rspec spec/models/user_spec.rb
+  505  1620284710  0:00  bundle exec rspec spec/models/room_spec.rb
+  506  1620284710  0:00  bundle exec rspec spec/models/message_spec.rb
+  507  1620284710  0:00  rails g rspec:system user
+  508  1620284710  0:00  rails g rspec:system room
+  509  1620284710  0:00  rails g rspec:system message
+  510  1620284710  0:00  bundle exec rspec spec/system/users_spec.rb
+  511  1620284710  0:00  bundle exec rspec spec/system/users_spec.rb
+  512  1620284710  0:00  rails s
+  513  1620284710  0:00  bundle exec rspec spec/system/users_spec.rb
+  514  1620284710  0:00  bundle exec rspec spec/system/messages_spec.rb
+  515  1620284710  0:00  bundle exec rspec spec/system/messages_spec.rb
+  516  1620284710  0:00  bundle exec rspec spec/system/messages_spec.rb
+  517  1620284710  0:00  bundle exec rspec spec/system/messages_spec.rb
+  518  1620284710  0:00  bundle exec rspec spec/system/rooms_spec.rb
+  519  1620284710  0:00  cd ~/projects
+  520  1620284710  0:00  rails _6.0.0_ new protospace-テックマスターのuser_id -d mysql
+  521  1620284710  0:00  cd protospace-”テックマスターのuser_id”
+  522  1620284710  0:00  cd protospace-35034
+  523  1620284710  0:00  rails s
+  524  1620284710  0:00  cd
+  525  1620284710  0:00  mysql -u root
+  526  1620284710  0:00  rails g controller prototypes index
+  527  1620284710  0:00  rails g devise:install
+  528  1620284710  0:00  rails g devise user
+  529  1620284710  0:00  rails db:migrate
+  530  1620284710  0:00  rails db:migrate
+  531  1620284710  0:00  histry
+  532  1620284710  0:00  histly
+  533  1620284710  0:00  bundle install
+  534  1620284710  0:00  rails db:migration
+  535  1620284710  0:00  rails db:migrate
+  536  1620284710  0:00  rails db:migrate
+  537  1620284710  0:00  rails db:rollback
+  538  1620284710  0:00  rails db:migrate
+  539  1620284710  0:00  rails db:migrate:reset
+  540  1620284710  0:00  rails db:migrate
+  541  1620284710  0:00  mysql -u root
+  542  1620284710  0:00  rails s
+  543  1620284710  0:00  cd ~/projects
+  544  1620284710  0:00  rails _6.0.0_ new protospace35034 -d mysql
+  545  1620284710  0:00  cd protospace-35034
+  546  1620284710  0:00  rails db:create
+  547  1620284710  0:00  rails g controller prototypes index
+  548  1620284710  0:00  cd protospace-35034
+  549  1620284710  0:00  cd protospace35034
+  550  1620284710  0:00  rails g controller prototypes index
+  551  1620284710  0:00  rails db:create
+  552  1620284710  0:00  cd
+  553  1620284710  0:00  mysql -u root
+  554  1620284710  0:00  cd
+  555  1620284710  0:00  brew tap heroku/brew && brew install heroku
+  556  1620284710  0:00  heroku --version\n\nheroku/7.40.0 darwin-x64 node-v12.16.2
+  557  1620284710  0:00  heroku login --interactive
+  558  1620284710  0:00  heroku login --interactive
+  559  1620284710  0:00  cd ~/projects/ajax_app
+  560  1620284710  0:00  heroku create ajax-app-テックマスターのユーザーID
+  561  1620284710  0:00  heroku create ajax-app-35034
+  562  1620284710  0:00  git config --list | grep heroku
+  563  1620284710  0:00  heroku addons:add cleardb\nCreating cleardb on ⬢ ajax-app-123456... free\nCreated cleardb-vertical-00000 as CLEARDB_DATABASE_URL\nUse heroku addons:docs cleardb to view documentation
+  564  1620284710  0:00  heroku_cleardb=`heroku config:get CLEARDB_DATABASE_URL`
+  565  1620284710  0:00  heroku --version
+  566  1620284710  0:00  EDITOR="vi" bin/rails credentials:edit
+  567  1620284710  0:00  heroku_cleardb=`heroku config:get CLEARDB_DATABASE_URL`
+  568  1620284710  0:00  heroku addons:add cleardb\nCreating cleardb on ⬢ ajax-app-123456... free\nCreated cleardb-vertical-00000 as CLEARDB_DATABASE_URL\nUse heroku addons:docs cleardb to view documentation
+  569  1620284710  0:00  heroku_cleardb=`heroku config:get CLEARDB_DATABASE_URL`
+  570  1620284710  0:00  git config --list | grep heroku
+  571  1620284710  0:00  heroku create ajax-app-テックマスターのユーザーI35034
+  572  1620284710  0:00  git config --list | grep heroku
+  573  1620284710  0:00  heroku addons:add cleardb\nCreating cleardb on ⬢ ajax-app-123456... free\nCreated cleardb-vertical-00000 as CLEARDB_DATABASE_URL\nUse heroku addons:docs cleardb to view documentation
+  574  1620284710  0:00  heroku addons:add cleardb\nCreating cleardb on ⬢ ajax-app-35034... free\nCreated cleardb-vertical-00000 as CLEARDB_DATABASE_URL\nUse heroku addons:docs cleardb to view documentation
+  575  1620284710  0:00  heroku_cleardb=`heroku config:get CLEARDB_DATABASE_URL`
+  576  1620284710  0:00  cd
+  577  1620284710  0:00  brew tap heroku/brew && brew install heroku
+  578  1620284710  0:00  heroku create protospace-123456
+  579  1620284710  0:00  git config --list | grep heroku
+  580  1620284710  0:00  % heroku addons:add cleardb\nCreating cleardb on ⬢ ajax-app-123456... free\nCreated cleardb-vertical-00000 as CLEARDB_DATABASE_URL\nUse heroku addons:docs cleardb to view documentation
+  581  1620284710  0:00  % heroku addons:add cleardb\nCreating cleardb on ⬢ protospace-35034... free\nCreated cleardb-vertical-00000 as CLEARDB_DATABASE_URL\nUse heroku addons:docs cleardb to view documentation
+  582  1620284710  0:00  brew tap heroku/brew && brew install heroku
+  583  1620284710  0:00  heroku login -i\nheroku: Enter your login credentials
+  584  1620284710  0:00  git clone 'https://github.com/sumino-hill/protospace-35034'\nCloning into 'java-getting-started'...
+  585  1620284710  0:00  rails s
+  586  1620284710  0:00  rails s
+  587  1620284710  0:00  rails s
+  588  1620284710  0:00  rails s
+  589  1620284710  0:00  cd
+  590  1620284710  0:00  cd projects/up
+  591  1620284710  0:00  heroku login
+  592  1620284710  0:00  heroku login
+  593  1620284710  0:00  gem install rails --no-document
+  594  1620284710  0:00  rails new myapp --database=postgresql
+  595  1620284710  0:00  cd up
+  596  1620284710  0:00  cd
+  597  1620284710  0:00  cd up
+  598  1620284710  0:00  cd /up
+  599  1620284710  0:00  cd projects
+  600  1620284710  0:00  cd up
+  601  1620284710  0:00  brew tap heroku/brew && brew install heroku
+  602  1620284710  0:00  heroku --version
+  603  1620284710  0:00  heroku login --interactive
+  604  1620284710  0:00  heroku login --interactive
+  605  1620284710  0:00  heroku create up-35034
+  606  1620284710  0:00  heroku addons:add cleardb\nCreating cleardb on ⬢ ajax-app-123456... free\nCreated cleardb-vertical-00000 as CLEARDB_DATABASE_URL\nUse heroku addons:docs cleardb to view documentation
+  607  1620284710  0:00  git config --list | grep heroku
+  608  1620284710  0:00  heroku --version
+  609  1620284710  0:00  heroku addons:add cleardb\nCreating cleardb on ⬢ ajax-app-123456... free\nCreated cleardb-vertical-00000 as CLEARDB_DATABASE_URL\nUse heroku addons:docs cleardb to view documentation
+  610  1620284710  0:00  heroku addons:add cleardb\nCreating cleardb on ⬢ up-35034... free\nCreated cleardb-vertical-00000 as CLEARDB_DATABASE_URL\nUse heroku addons:docs cleardb to view documentation
+  611  1620284710  0:00  heroku addons:add cleardb
+  612  1620284710  0:00  heroku_cleardb=`heroku config:get CLEARDB_DATABASE_URL`
+  613  1620284710  0:00  heroku config:set RAILS_MASTER_KEY=`cat config/master.key`
+  614  1620284710  0:00  heroku config
+  615  1620284710  0:00  git clone https://github.com/heroku/ruby-getting-started.git
+  616  1620284710  0:00  cd ruby-getting-started
+  617  1620284710  0:00  heroku create
+  618  1620284710  0:00  git push heroku main
+  619  1620284710  0:00  heroku open
+  620  1620284710  0:00  heroku logs --tail
+  621  1620284710  0:00  cd ~/projects
+  622  1620284710  0:00  rails _6.0.0_ new protospace-テックマスターのuser_id -d mysql
+  623  1620284710  0:00  rails _6.0.0_ new protospace-35034 -d mysql
+  624  1620284710  0:00  cd protospace-35034
+  625  1620284710  0:00  rails db:create
+  626  1620284710  0:00  rails g contoroller prototypes index
+  627  1620284710  0:00  rails g controller prototypes index
+  628  1620284710  0:00  bundle install
+  629  1620284710  0:00  rails g devise:install
+  630  1620284710  0:00  rails g devise user
+  631  1620284710  0:00  rails db:migrate
+  632  1620284710  0:00  rails g devise:views
+  633  1620284710  0:00  rails routes
+  634  1620284710  0:00  rails g devise:views
+  635  1620284710  0:00  rails routes
+  636  1620284710  0:00  rails g model prototype
+  637  1620284710  0:00  rails db:migrate
+  638  1620284710  0:00  bundle install
+  639  1620284710  0:00  rails active_storage:install
+  640  1620284710  0:00  rails db:migrate
+  641  1620284710  0:00  rails routes
+  642  1620284710  0:00  rails routes
+  643  1620284710  0:00  rails g model comment
+  644  1620284710  0:00  rails db:migrate
+  645  1620284710  0:00  rails g controller comments
+  646  1620284710  0:00  rails g controller users
+  647  1620284710  0:00  rails routes
+  648  1620284710  0:00  rails g controller users
+  649  1620284710  0:00  cd projects
+  650  1620284710  0:00  cd protospace-35034
+  651  1620284710  0:00  heroku --version
+  652  1620284710  0:00  heroku login --interactive
+  653  1620284710  0:00  heroku login --interactiv
+  654  1620284710  0:00  heroku login --interactive
+  655  1620284710  0:00  heroku create protospace-35034
+  656  1620284710  0:00  git config --list | grep heroku
+  657  1620284710  0:00  heroku addons:add cleardb
+  658  1620284710  0:00  heroku_cleardb=`heroku config:get CLEARDB_DATABASE_URL`
+  659  1620284710  0:00  heroku config:set DATABASE_URL=mysql2${heroku_cleardb:5}
+  660  1620284710  0:00  EDITOR="vi" bin/rails credentials:edit
+  661  1620284710  0:00  heroku config:set RAILS_MASTER_KEY=`cat config/master.key`
+  662  1620284710  0:00  heroku config
+  663  1620284710  0:00  heroku stack:set heroku-18 -a protospace-35034
+  664  1620284710  0:00  git push heroku master
+  665  1620284710  0:00  heroku run rails db:migrate
+  666  1620284710  0:00  heroku apps:info
+  667  1620284710  0:00  git clone https://github.com/heroku/ruby-getting-started.git
+  668  1620284710  0:00  cd ruby-getting-started
+  669  1620284710  0:00  heroku create
+  670  1620284710  0:00  git push heroku main
+  671  1620284710  0:00  heroku open
+  672  1620284710  0:00  heroku logs --tail
+  673  1620284710  0:00  cd projects
+  674  1620284710  0:00  cd protospace
+  675  1620284710  0:00  cd protospace-35034
+  676  1620284710  0:00  heroku apps:info
+  677  1620284710  0:00  git push heroku master
+  678  1620284710  0:00  heroku logs --tail
+  679  1620284710  0:00  git push heroku master
+  680  1620284710  0:00  heroku addons:add cleardb
+  681  1620284710  0:00  heroku_cleardb=`heroku config:get CLEARDB_DATABASE_URL`
+  682  1620284710  0:00  heroku config:set DATABASE_URL=mysql2${heroku_cleardb:5}
+  683  1620284710  0:00  EDITOR="vi" bin/rails credentials:edit
+  684  1620284710  0:00  heroku config:set RAILS_MASTER_KEY=`cat config/master.key`
+  685  1620284710  0:00  heroku config
+  686  1620284710  0:00  heroku stack:set heroku-18 -a protospace-35034
+  687  1620284710  0:00  git push heroku master
+  688  1620284710  0:00  heroku open
+  689  1620284710  0:00  git push heroku master
+  690  1620284710  0:00  heroku run rails db:migrate
+  691  1620284710  0:00  heroku apps:info
+  692  1620284710  0:00  irb
+  693  1620284710  0:00  cd ~/projects
+  694  1620284710  0:00  rails s
+  695  1620284710  0:00  rails _6.0.0_ new furima-35034 -d mysql
+  696  1620284710  0:00  cd furima-35034
+  697  1620284710  0:00  rails db:create
+  698  1620284710  0:00  bundle install
+  699  1620284710  0:00  touch .rubocop.yml
+  700  1620284710  0:00  touch .rubocop.yml
+  701  1620284710  0:00  pwd
+  702  1620284710  0:00  cd projects
+  703  1620284710  0:00  cd
+  704  1620284710  0:00  cd projects/furima-35034
+  705  1620284710  0:00  pwd
+  706  1620284710  0:00  bundle exec rubocop
+  707  1620284710  0:00  heroku login --interactive
+  708  1620284710  0:00  heroku run DISABLE_DATABASE_ENVIRONMENT_CHECK=1 rails db:drop db:create db:migrate\n
+  709  1620284710  0:00  heroku login --interactive
+  710  1620284710  0:00  heroku --version
+  711  1620284710  0:00  heroku create furima-35034
+  712  1620284710  0:00  git config --list | grep heroku
+  713  1620284710  0:00  heroku apps:info
+  714  1620284710  0:00  heroku run DISABLE_DATABASE_ENVIRONMENT_CHECK=1 rails db:drop db:create db:migrate
+  715  1620284710  0:00  heroku run rails db:migrate
+  716  1620284710  0:00  git push heroku master
+  717  1620284710  0:00  heroku addons:add cleardb
+  718  1620284710  0:00  heroku_cleardb=`heroku config:get CLEARDB_DATABASE_URL`
+  719  1620284710  0:00  heroku config:set DATABASE_URL=mysql2${heroku_cleardb:5}\n
+  720  1620284710  0:00  heroku config:set RAILS_MASTER_KEY=`cat config/master.key`
+  721  1620284710  0:00  heroku config
+  722  1620284710  0:00  heroku stack:set heroku-18 -a furima-35034
+  723  1620284710  0:00  git push heroku master
+  724  1620284710  0:00  heroku run rails db:migrate
+  725  1620284710  0:00  git push heroku master
+  726  1620284710  0:00  heroku apps:info\n
+  727  1620284710  0:00  heroku logs --tail --app furima-35034
+  728  1620284710  0:00  cd ~/projects
+  729  1620284710  0:00  rails _6.0.0_ new furima-35034 -d mysql\n
+  730  1620284710  0:00  cd furima-35034
+  731  1620284710  0:00  rails db:create
+  732  1620284710  0:00  bundle install
+  733  1620284710  0:00  touch .rubocop.yml
+  734  1620284710  0:00  heroku create furima-35034
+  735  1620284710  0:00  git config --list | grep heroku
+  736  1620284710  0:00  heroku addons:add cleardb
+  737  1620284710  0:00  heroku_cleardb=`heroku config:get CLEARDB_DATABASE_URL`
+  738  1620284710  0:00  heroku config:set DATABASE_URL=mysql2${heroku_cleardb:5}
+  739  1620284710  0:00  heroku config:set RAILS_MASTER_KEY=`cat config/master.key`
+  740  1620284710  0:00  heroku config
+  741  1620284710  0:00  heroku stack:set heroku-18 -a furima-35034
+  742  1620284710  0:00  git push heroku master
+  743  1620284710  0:00  heroku run rails db:migrate
+  744  1620284710  0:00  heroku apps:info\n
+  745  1620284710  0:00  git push heroku master
+  746  1620284710  0:00  cd
+  747  1620284710  0:00  cd projects
+  748  1620284710  0:00  rails _6.0.0_ new active_hash_app -d mysql
+  749  1620284710  0:00  cd active_hash_app
+  750  1620284710  0:00  rails db:create
+  751  1620284710  0:00  bundle install
+  752  1620284710  0:00  rails g model article
+  753  1620284710  0:00  rails db:migrate
+  754  1620284710  0:00  heroku apps:info
+  755  1620284710  0:00  rails s
+  756  1620284710  0:00  rails s
+  757  1620284710  0:00  cd furima-test/furima
+  758  1620284710  0:00  bundle install
+  759  1620284710  0:00  rails g model user
+  760  1620284710  0:00  rails g model item
+  761  1620284710  0:00  rails g model purchase
+  762  1620284710  0:00  rails g model address
+  763  1620284710  0:00  rails g db
+  764  1620284710  0:00  rails db:create
+  765  1620284710  0:00  rails g devise
+  766  1620284710  0:00  rails g devise:install
+  767  1620284710  0:00  rails g devise user
+  768  1620284710  0:00  rails db:migrate
+  769  1620284710  0:00  rails g controller items
+  770  1620284710  0:00  rails s
+  771  1620284710  0:00  rails routes
+  772  1620284710  0:00  rails g devise:views
+  773  1620284710  0:00  rails g controller users
+  774  1620284710  0:00  rails g devise:controllers users
+  775  1620284710  0:00  cd
+  776  1620284710  0:00  mysql -u root
+  777  1620284710  0:00  CD projects
+  778  1620284710  0:00  cd projects
+  779  1620284710  0:00  cd furima-35034
+  780  1620284710  0:00  rails g controller furimas
+  781  1620284710  0:00  git push heroku master\n
+  782  1620284710  0:00  bundle install
+  783  1620284710  0:00  rails g devise:install
+  784  1620284710  0:00  mysql -u root
+  785  1620284710  0:00  RAILS S
+  786  1620284710  0:00  rails s
+  787  1620284710  0:00  cd projects
+  788  1620284710  0:00  cd furima-35034
+  789  1620284710  0:00  rails Db:create
+  790  1620284710  0:00  rails db:create
+  791  1620284710  0:00  rails db:create
+  792  1620284710  0:00  rails db:drop
+  793  1620284710  0:00  rails db:create
+  794  1620284710  0:00  rails db migrate
+  795  1620284710  0:00  rails s
+  796  1620284710  0:00  rails s
+  797  1620284710  0:00  cd projects
+  798  1620284710  0:00  cd furima-35034/furima
+  799  1620284710  0:00  rails db:create
+  800  1620284710  0:00  cd
+  801  1620284710  0:00  cd projects
+  802  1620284710  0:00  cd furima-35034
+  803  1620284710  0:00  brew tap heroku/brew && brew install heroku
+  804  1620284710  0:00  heroku --version
+  805  1620284710  0:00  heroku login --interactive
+  806  1620284710  0:00  heroku create furima-35034
+  807  1620284710  0:00  heroku addons:add cleardb
+  808  1620284710  0:00  heroku_cleardb=`heroku config:get CLEARDB_DATABASE_URL`
+  809  1620284710  0:00  heroku config:set DATABASE_URL=mysql2${heroku_cleardb:5}
+  810  1620284710  0:00  EDITOR="vi" bin/rails credentials:edit
+  811  1620284710  0:00  heroku config:set RAILS_MASTER_KEY=`cat config/master.key`
+  812  1620284710  0:00  heroku config
+  813  1620284710  0:00  heroku stack:set heroku-18 -a furima-35034
+  814  1620284710  0:00  git push heroku master
+  815  1620284710  0:00  heroku run rails db:migrate
+  816  1620284710  0:00  heroku apps:info
+  817  1620284710  0:00  rails db:migrate
+  818  1620284710  0:00  rails g controller furimas
+  819  1620284710  0:00  cd
+  820  1620284710  0:00  cd ~/projects
+  821  1620284710  0:00  rails _6.0.0_ new furima-0 -d mysql\n
+  822  1620284710  0:00  cd furima
+  823  1620284710  0:00  cd furima-0
+  824  1620284710  0:00  rails db:create
+  825  1620284710  0:00  bundle install
+  826  1620284710  0:00  touch .rubocop.yml
+  827  1620284710  0:00  cd
+  828  1620284710  0:00  mysql -u root
+  829  1620284710  0:00  vim ~/.zshrc
+  830  1620284710  0:00  cd
+  831  1620284710  0:00  cd projects
+  832  1620284710  0:00  cd furima
+  833  1620284710  0:00  vim ~/.zshrc

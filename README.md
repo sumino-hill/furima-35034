@@ -25,14 +25,16 @@ Things you may want to cover:
 
 ## usersテーブル
 
-| Column     | Type   | Options     |
-| ---------- | ------ | ----------- |
-| nickname   | string | null: false |
-| email      | string | null: false |
-| password   | string | null: false |
-| name       | string | null: false |
-| name_kana  | string | null: false |
-| birthday   | integer| null: false |
+| Column            | Type   | Options                 |
+| ----------------- | ------ | ----------------------- |
+| nickname          | string | null: false             |
+| email             | string | null: false,unique: true|
+| encrypted_password| string | null: false             |
+| last_name         | string | null: false             |
+| first_name        | string | null: false             |
+| last_name _kana   | string | null: false             |
+| first_name _kana  | string | null: false             |
+| birthday          | date   | null: false             |
 
 
 
@@ -48,7 +50,6 @@ Things you may want to cover:
 | Column     | Type      | Options          |
 | ---------- | --------- | ---------------- |
 | name       | string    | null: false      |
-| image      | string    | null: false      |
 | explain    | text      | null: false      |
 | category   | string    | null: false      |
 | state      | string    | null: false      |
@@ -56,7 +57,7 @@ Things you may want to cover:
 | location   | string    | null: false      |
 | days       | string    | null: false      |
 | price      | integer   | null: false      |
-| user_id    | references| foreign_key: true|
+| user       | references| foreign_key: true|
 
 
 ### Association
@@ -67,8 +68,8 @@ Things you may want to cover:
 
 | Column     | Type      | Options           |
 | ---------- | --------- | ----------------- |
-| user_id    | references| foreign_key: true |
-| item_id    | references| foreign_key: true |
+| user       | references| foreign_key: true |
+| item       | references| foreign_key: true |
 
 
 
@@ -80,9 +81,14 @@ Things you may want to cover:
 
 | Column          | Type      | Options          |
 | --------------- | --------- | ---------------- |
-| credit_card     | string    | null: false      |
-| shipping_address| string    | null: false      |
+| postal-code     | string    | null: false      |
+| prefecture      | string    | null: false      |
+| city            | string    | null: false      |
+| addresses       | string    | null: false      |
+| building        | string    |                  |
 | phone_number    | string    | null: false      |
+| purchase        | references| foreign_key: true|
+
 
 
 

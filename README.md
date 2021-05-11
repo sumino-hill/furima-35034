@@ -47,17 +47,17 @@ Things you may want to cover:
 
 ## itemsテーブル
 
-| Column     | Type      | Options          |
-| ---------- | --------- | ---------------- |
-| name       | string    | null: false      |
-| explain    | text      | null: false      |
-| category   | string    | null: false      |
-| state      | string    | null: false      |
-| cost       | string    | null: false      |
-| location   | string    | null: false      |
-| days       | string    | null: false      |
-| price      | integer   | null: false      |
-| user       | references| foreign_key: true|
+| Column       | Type      | Options          |
+| ------------ | --------- | ---------------- |
+| name         | string    | null: false      |
+| explain      | text      | null: false      |
+| category_id  | integer   | null: false      |
+| state_id     | integer   | null: false      |
+| cost_id      | integer   | null: false      |
+| prefecture_id| integer   | null: false      |
+| days_id      | integer   | null: false      |
+| price        | integer   | null: false      |
+| user         | references| foreign_key: true|
 
 
 ### Association
@@ -76,13 +76,14 @@ Things you may want to cover:
 ### Association
 - belongs_to :user
 - belongs_to :item
+- has_one :purchase
 
 ## addressテーブル
 
 | Column          | Type      | Options          |
 | --------------- | --------- | ---------------- |
-| postal-code     | string    | null: false      |
-| prefecture      | string    | null: false      |
+| postal_code     | string    | null: false      |
+| prefecture_id   | integer   | null: false      |
 | city            | string    | null: false      |
 | addresses       | string    | null: false      |
 | building        | string    |                  |

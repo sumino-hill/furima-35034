@@ -76,7 +76,7 @@ Things you may want to cover:
 ### Association
 - belongs_to :user
 - belongs_to :item
-- has_one : purchase
+- has_one : address
 
 
 

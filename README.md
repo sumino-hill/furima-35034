@@ -47,17 +47,17 @@ Things you may want to cover:
 
 ## itemsテーブル
 
-| Column       | Type      | Options          |
-| ------------ | --------- | ---------------- |
-| name         | string    | null: false      |
-| explain      | text      | null: false      |
-| category_id  | integer   | null: false      |
-| state_id     | integer   | null: false      |
-| cost_id      | integer   | null: false      |
-| prefecture_id| integer   | null: false      |
-| days_id      | integer   | null: false      |
-| price        | integer   | null: false      |
-| user         | references| foreign_key: true|
+| Column         | Type      | Options          |
+| -------------- | --------- | ---------------- |
+| name           | string    | null: false      |
+| explain        | text      | null: false      |
+| category_id    | integer   | null: false      |
+| state_id       | integer   | null: false      |
+| cost_id        | integer   | null: false      |
+| prefecture_id  | integer   | null: false      |
+| shipping_day_id| integer   | null: false      |
+| price          | integer   | null: false      |
+| user           | references| foreign_key: true|
 
 
 ### Association
@@ -81,7 +81,7 @@ Things you may want to cover:
 
 
 
-## addressテーブル
+## addressesテーブル
 
 | Column          | Type      | Options          |
 | --------------- | --------- | ---------------- |

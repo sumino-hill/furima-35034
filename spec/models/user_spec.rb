@@ -57,6 +57,11 @@ RSpec.describe User, type: :model do
         @user.valid?
         expect(@user.errors.full_messages).to include("Last name is invalid")
       end
+      it "first_nameがない場合は登録できないこと" do
+        @user.first_name= nil
+        @user.valid?
+        expect(@user.errors.full_messages).to include("First name can't be blank")
+      end
       it "first_name半角カタカナの場合は登録できないこと" do
         @user.first_name= 'ｱ'
         @user.valid?
@@ -93,6 +98,11 @@ RSpec.describe User, type: :model do
         another_user.email = @user.email
         another_user.valid?
         expect(another_user.errors.full_messages).to include('Email has already been taken')
+      end
+      it "emailが＠を含まない場合登録できないこと場合は登録できないこと" do
+        @user.email = 'aaaaaaaaa'
+        @user.valid?
+        expect(@user.errors.full_messages).to include("Email is invalid")
       end
       it 'passwordが5文字以下では登録できない' do
         @user.password = '00000'

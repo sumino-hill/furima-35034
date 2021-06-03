@@ -1,0 +1,2 @@
+class  < ActiveHash::Base
+end

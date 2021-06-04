@@ -8,6 +8,7 @@ class Item < ApplicationRecord
   belongs_to :user
   has_one_attached :image
   with_options presence: true do
+    validates :image
     validates :name
     validates :explain
     validates :category_id
@@ -15,7 +16,7 @@ class Item < ApplicationRecord
     validates :cost_id
     validates :prefecture_id
     validates :shipping_day_id
-    validates :price
+    validates :price, numericality: {only_integer: true}
     validates :user
   end
 end

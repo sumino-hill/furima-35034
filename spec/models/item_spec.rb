@@ -57,7 +57,7 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include("Price can't be blank")
       end
       it "preiceが300未満の場合は登録できないこと" do 
-        @item.price = '299'
+        @item.price = 299
         @item.valid?
         expect(@item.errors.full_messages).to include()
       end
@@ -70,6 +70,22 @@ RSpec.describe Item, type: :model do
         @item.user = nil
         @item.valid?
         expect(@item.errors.full_messages).to include("User must exist")
+      end
+      it "価格は全角文字では登録できないこと
+      " do 
+        @item.price = '１０００'
+        @item.valid?
+        expect(@item.errors.full_messages).to include("Price is not a number")
+      end
+      it "価格は半角英数混合では登録できないこと" do 
+        @item.price = 'a1'
+        @item.valid?
+        expect(@item.errors.full_messages).to include("Price is not a number")
+      end
+      it "価格は半角英語だけでは登録できないこと" do 
+        @item.price = 'a'
+        @item.valid?
+        expect(@item.errors.full_messages).to include("Price is not a number")
       end
     end
   end

@@ -10,63 +10,6 @@ RSpec.describe Item, type: :model do
         expect(@item).to be_valid
       end
     end
-    context '商品出品がうまくいかない時' do
-      it "imageがない場合は登録できないこと" do 
-        @item.image = nil
-        @item.valid?
-        expect(@item.errors.full_messages).to include("Image can't be blank")
-      end
-      it "nameがない場合は登録できないこと" do 
-        @item.name = nil
-        @item.valid?
-        expect(@item.errors.full_messages).to include("Name can't be blank")
-      end
-      it "explainがない場合は登録できないこと" do 
-        @item.explain = nil
-        @item.valid?
-        expect(@item.errors.full_messages).to include("Explain can't be blank")
-      end
-      it "category_idがない場合は登録できないこと" do 
-        @item.category_id = nil
-        @item.valid?
-        expect(@item.errors.full_messages).to include("Category can't be blank")
-      end
-      it "state_idがない場合は登録できないこと" do 
-        @item.state_id = nil
-        @item.valid?
-        expect(@item.errors.full_messages).to include("State can't be blank")
-      end
-      it "cost_idがない場合は登録できないこと" do 
-        @item.cost_id = nil
-        @item.valid?
-        expect(@item.errors.full_messages).to include("Cost can't be blank")
-      end
-      it "prefecture_idがない場合は登録できないこと" do 
-        @item.prefecture_id = nil
-        @item.valid?
-        expect(@item.errors.full_messages).to include("Prefecture can't be blank")
-      end
-      it "shipping_day_idがない場合は登録できないこと" do 
-        @item.shipping_day_id = nil
-        @item.valid?
-        expect(@item.errors.full_messages).to include("Shipping day can't be blank")
-      end
-      it "preiceがない場合は登録できないこと" do 
-        @item.price = nil
-        @item.valid?
-        expect(@item.errors.full_messages).to include("Price can't be blank")
-      end
-      it "preiceが300未満の場合は登録できないこと" do 
-        @item.price = '299'
-        @item.valid?
-        expect(@item.errors.full_messages).to include()
-      end
-      it "preiceが9999999より上の場合は登録できないこと" do 
-        @item.price = '10000000'
-        @item.valid?
-        expect(@item.errors.full_messages).to include()
-      end
-    end
   end
 end
 

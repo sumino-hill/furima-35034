@@ -7,7 +7,7 @@ FactoryBot.define do
     cost_id {1}
     prefecture_id {1}
     shipping_day_id {1}
-    price {1}
+    price {300}
     after(:build) do |item|
       item.image.attach(io: File.open('/Users/suminotaisei/projects/furima-35034/app/assets/images/search.png'), filename: 'star.png', content_type: 'image/png')
     end

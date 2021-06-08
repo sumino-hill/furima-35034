@@ -71,8 +71,7 @@ RSpec.describe Item, type: :model do
         @item.valid?
         expect(@item.errors.full_messages).to include("User must exist")
       end
-      it "価格は全角文字では登録できないこと
-      " do 
+      it "価格は全角文字では登録できないこと" do 
         @item.price = '１０００'
         @item.valid?
         expect(@item.errors.full_messages).to include("Price is not a number")

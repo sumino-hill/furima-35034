@@ -17,6 +17,5 @@ class Item < ApplicationRecord
     validates :prefecture_id
     validates :shipping_day_id
     validates :price, numericality: {only_integer: true,in: 300..9999999 }
-    validates :user
   end
 end

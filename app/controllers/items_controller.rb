@@ -23,6 +23,7 @@ class ItemsController < ApplicationController
   end
 
   def edit
+    
   end
 
   def update
@@ -51,6 +52,8 @@ class ItemsController < ApplicationController
 
   def set_edit
     if @item.user != current_user
+      redirect_to root_path
+    elsif @item.purchases.present?
       redirect_to root_path
     end
   end

@@ -4,6 +4,7 @@ class PurchasesController < ApplicationController
   end
   
   def create
+    
   end
 
 private

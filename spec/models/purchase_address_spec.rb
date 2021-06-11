@@ -11,6 +11,11 @@ RSpec.describe PurchaseAddress, type: :model do
       it "全ての項目の入力が存在すれば登録できること" do
         expect(@purchase_address).to be_valid
       end
+      it "建物名がなくても登録できること" do
+        @purchase_address.building = nil
+        @purchase_address.valid?
+        expect(@purchase_address).to be_valid
+      end
     end
     context '商品購入がうまくいかない時' do
       it "Postal_codeがない場合は登録できないこと" do 

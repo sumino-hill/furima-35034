@@ -24,9 +24,7 @@ private
 
   def set_purchase
     @items = Item.find(params[:item_id])
-    if @items.user == current_user
-      redirect_to root_path
-    elsif @items.purchases.present?
+    if @items.user == current_user || @items.purchases.present?
       redirect_to root_path
     end
   end

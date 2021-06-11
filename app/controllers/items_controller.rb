@@ -51,7 +51,7 @@ class ItemsController < ApplicationController
   end
 
   def set_edit
-    if @item.user != current_user || @item.purchases.present?
+    if @item.user != current_user || @item.purchase.present?
       redirect_to root_path
     end
   end

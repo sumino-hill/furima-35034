@@ -3,6 +3,8 @@ require 'rails_helper'
 RSpec.describe PurchaseAddress, type: :model do
   before do
     @purchase_address = FactoryBot.build(:purchase_address)
+    @user = FactoryBot.build(:user)
+    @item = FactoryBot.build(:item)
   end
   describe '商品購入' do
     context '商品購入がうまくいく時' do

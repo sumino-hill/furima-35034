@@ -8,6 +8,8 @@ class PurchaseAddress
     validates :addresses
     validates :phone_number,format: { with:/\A\d{10,11}\z/ }
     validates :token
+    validates :user_id
+    validates :item_id
   end
   def save
     purchase = Purchase.create!(user_id: user_id, item_id: item_id)

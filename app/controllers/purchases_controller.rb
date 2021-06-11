@@ -3,11 +3,6 @@ class PurchasesController < ApplicationController
   before_action :set_purchase
   def index
     @purchase_address = PurchaseAddress.new
-    if @items.user == current_user
-      redirect_to root_path
-    elsif @items.purchases.present?
-      redirect_to root_path
-    end
   end
 
   def create
@@ -29,6 +24,11 @@ private
 
   def set_purchase
     @items = Item.find(params[:item_id])
+    if @items.user == current_user
+      redirect_to root_path
+    elsif @items.purchases.present?
+      redirect_to root_path
+    end
   end
 
   def pay_item

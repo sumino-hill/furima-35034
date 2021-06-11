@@ -6,6 +6,7 @@ FactoryBot.define do
     addresses    {"青山１−１−１"}
     building     {""}
     phone_number {"09009090909"}
+    token        {"tok_abcdefghijk00000000000000000"}
 
     association :user_id, factory: :user
     association :item_id, factory: :user
